@@ -1,6 +1,8 @@
 package com.tsystems.javaschool.tasks.subsequence;
 
+
 import java.util.List;
+
 
 public class Subsequence {
 
@@ -14,7 +16,39 @@ public class Subsequence {
      */
     @SuppressWarnings("rawtypes")
     public boolean find(List x, List y) {
-        // TODO: Implement the logic here
+
+
+            if(checkInput(x,y)) {
+                return true;
+            }
+
+            // define variables for working with lists
+            Object currentX;
+            Object currentY;
+            currentX = x.remove(0);
+
+
+            while (!y.isEmpty()) {
+                currentY = y.remove(0);
+                // we will check if current element of x contains in y, until all elements are checked
+                if (currentY.equals(currentX)) {
+                    if (x.isEmpty()) {
+                        return true;
+                    }
+                    currentX = x.remove(0);
+                }
+            }
+
         return false;
     }
+
+
+    // check if lists are valid or not
+    private static boolean checkInput(List x, List y){
+        if( x == null || y == null) {
+            throw new IllegalArgumentException();
+        }
+        return x.isEmpty();
+    }
+
 }
