@@ -1,2 +1,15 @@
+arch: amd64
+
 language: java
-jdk: oraclejdk8
+
+jdk:
+  - oraclejdk8
+
+cache:
+  directories:
+    - $HOME/.m2
+
+script:
+  - java --version
+  - ./mvnw clean install
+  - ./mvnw test
