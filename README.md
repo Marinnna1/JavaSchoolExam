@@ -12,10 +12,7 @@ The exam includes 3 tasks to be done: [Calculator](/tasks/Calculator.md), [Pyram
 ### Result ###
 
 * Author name : Marina Krayukhina
-* Codeship : {PUT YOUR CODESHIP BAGDE HERE}
-
-Example of Codeship badge. Please remove the example before you send us the link. 
-[ ![Codeship Status for tschool/javaschoolexam](https://app.codeship.com/projects/a9af8940-d130-0134-89a6-5e8aaaa2a5a2/status?branch=master)](https://app.codeship.com/projects/201451)
+* Java CI with Maven : [![Java CI with Maven](https://github.com/Marinnna1/JavaSchoolExam/actions/workflows/maven.yml/badge.svg)](https://github.com/Marinnna1/JavaSchoolExam/actions/workflows/maven.yml)
 
 
 ### How to start?  ###
